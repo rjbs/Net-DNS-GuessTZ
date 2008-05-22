@@ -21,10 +21,10 @@ is_deeply(
 );
 
 for my $host (sort keys %data) {
-  for my $prefer_cc (0, 1) {
-    my $have = tz_from_host($host, { prefer_cc => $prefer_cc });
-    my $want = $data{ $host }[ $prefer_cc ];
+  for my $priority ('ip', 'cc') {
+    my $have = tz_from_host($host, { priority => $priority });
+    my $want = $data{ $host }[ $priority eq 'cc' ? 1 : 0 ];
 
-    is($have, $want, "$host, prefer_cc: $want");
+    is($have, $want, "$host, priority: $priority => $want");
   }
 }
