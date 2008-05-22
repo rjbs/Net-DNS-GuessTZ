@@ -1,6 +1,8 @@
+use 5.006;
 use strict;
 use warnings;
 package Net::DNS::GuessTZ;
+our $VERSION = '0.001';
 
 =head1 NAME
 
