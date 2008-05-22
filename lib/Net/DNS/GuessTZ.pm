@@ -2,7 +2,7 @@ use 5.006;
 use strict;
 use warnings;
 package Net::DNS::GuessTZ;
-our $VERSION = '0.001';
+our $VERSION = '0.002';
 
 =head1 NAME
 
@@ -10,7 +10,7 @@ Net::DNS::GuessTZ - guess the time zone of a host
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SYNOPSIS
 
