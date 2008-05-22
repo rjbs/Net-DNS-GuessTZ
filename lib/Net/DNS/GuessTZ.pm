@@ -84,6 +84,7 @@ country it finds has more than three time zones.
 
 sub tz_from_host {
   my ($self, $host, $arg) = @_;
+  return unless $host;
   $arg ||= {};
   $arg->{ip_country} = 1 unless exists $arg->{ip_country};
 
