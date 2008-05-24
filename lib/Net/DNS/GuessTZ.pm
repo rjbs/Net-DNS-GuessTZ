@@ -41,7 +41,7 @@ use List::Util ();
 
 use Sub::Exporter::Util;
 use Sub::Exporter -setup => {
-  exports => [ tz_from_host => Sub::Exporter::Util::curry_class ],
+  exports => [ tz_from_host => Sub::Exporter::Util::curry_method ],
 };
 
 my $ICF;
