@@ -1,6 +1,8 @@
 Revision history for Net-DNS-GuessTZ
 
 {{$NEXT}}
+
+0.003     2013-07-07 08:23:03 America/New_York
           repackage, update bug tracker
 
 0.002     2008-05-22
