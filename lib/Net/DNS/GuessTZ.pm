@@ -2,15 +2,7 @@ use 5.006;
 use strict;
 use warnings;
 package Net::DNS::GuessTZ;
-our $VERSION = '0.002';
-
-=head1 NAME
-
-Net::DNS::GuessTZ - guess the time zone of a host
-
-=head1 VERSION
-
-version 0.002
+# ABSTRACT: guess the time zone of a host
 
 =head1 SYNOPSIS
 
@@ -31,8 +23,6 @@ This is fine if you don't really care too much about being correct.  It's
 probably better than just always assuming local time.
 
 Still, if possible, ask the user for his time zone when you can!
-
-=head1 METHODS
 
 =cut
 
@@ -64,7 +54,7 @@ sub _all_tz_from_ip {
   my @names = DateTime::TimeZone->names_in_country($cc);
 }
 
-=head2 tz_from_host
+=method tz_from_host
 
   my $tz_name = Net::DNS::GuessTZ->tz_from_host($hostname, %arg);
 
@@ -108,13 +98,5 @@ sub tz_from_host {
     return;
   }
 }
-
-=head1 COPYRIGHT
-
-Copyright (C) 2008, Ricardo SIGNES.  Derived from code by Tatsuhuko MIYAGAWA.
-
-This is free software, released under the same terms as perl itself.
-
-=cut
 
 1;

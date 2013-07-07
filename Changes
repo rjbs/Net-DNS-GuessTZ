@@ -1,7 +1,10 @@
 Revision history for Net-DNS-GuessTZ
 
-0.002   2008-05-22
-        added missing prereq
+{{$NEXT}}
+          repackage, update bug tracker
 
-0.001   2008-05-22
-        first release, derived from Plagger's GuessTimeZone plugin
+0.002     2008-05-22
+          added missing prereq
+
+0.001     2008-05-22
+          first release, derived from Plagger's GuessTimeZone plugin
